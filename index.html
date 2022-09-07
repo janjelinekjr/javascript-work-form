@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Form App</title>
+  </head>
+  <body>
+    <header class="form-header">
+      <h1 class="primary-heading">Welcome to our example form app!</h1>
+      <p class="subheading">Please use the register form</p>
+    </header>
+    <main>
+      <div class="container">
+        <form action="" class="form">
+          <input
+            id="input-username"
+            class="form-input"
+            name="username"
+            type="text"
+            placeholder="Enter username..."
+          />
+          <p id="username-check" class="input-check username-check-hidden">
+            Enter value between 4 and 64 characters!
+          </p>
+          <input
+            id="input-password"
+            class="form-input"
+            name="password"
+            type="password"
+            placeholder="Enter password..."
+          />
+          <p id="password-check" class="input-check password-check-hidden">
+            Enter value between 8 and 64 characters!
+          </p>
+          <input
+            id="input-confirm-password"
+            class="form-input"
+            name="confirmPassword"
+            type="password"
+            placeholder="Confirm password..."
+          />
+          <p
+            id="confirm-password-check"
+            class="input-check confirm-password-check-hidden"
+          >
+            Values are not equal!
+          </p>
+          <input
+            id="input-email"
+            class="form-input"
+            name="email"
+            type="text"
+            placeholder="Enter e-mail..."
+          />
+          <p id="email-check" class="input-check email-check-hidden">
+            Enter valid email
+          </p>
+          <input
+            class="form-input"
+            name="date"
+            id="input-date"
+            type="date"
+            required
+          />
+
+          <button class="form-button" type="submit">REGISTER</button>
+        </form>
+      </div>
+      <div class="user-list">
+        <h2 class="secondary-heading">User list</h2>
+        <div class="user">
+          <p class="empty">Empty</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
